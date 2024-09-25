@@ -5,7 +5,7 @@ pipeline {
             steps{
                 git url:'https://github.com/prashanth3516/finance_project', branch: "master"
                 sh 'mvn clean package'
-              
+            
             }
         }
         stage('Build docker image'){
